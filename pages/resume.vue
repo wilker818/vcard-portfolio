@@ -1,4 +1,5 @@
 <script setup>
+const disableEducation = ref(false)
 useHead({
   title: 'Resume',
 })
@@ -24,7 +25,7 @@ useHead({
       </div>
 
       <ol class="timeline-list">
-        <li v-if="false" class="timeline-item">
+        <li v-if="disableEducation" class="timeline-item">
           <h4 class="h4 timeline-item-title">
             UNIFRAN
           </h4>
@@ -44,8 +45,8 @@ useHead({
           <span>2020 — 2021</span>
 
           <p class="timeline-text">
-            Ensino técnico: Desenvolvimento de Sistemas<br>
-            Desenvolvi projetos individuais e em equipe, aplicando conhecimentos em linguagens como Java, Obeject Pascal(Delphi), PHP, Javascript e SQL. Aprendi sobre o ciclo de vida do desenvolvimento de software e metodologias ágeis.
+            {{ $t('pages.resume.textEducationEtecJose') }}<br>
+            {{ $t('pages.resume.textResumeEtecJose') }}
           </p>
         </li>
       </ol>
@@ -71,16 +72,7 @@ useHead({
           <span>Cardano Warriors | 02/2023 - Atual</span>
 
           <p class="timeline-text">
-            Tenho uma ampla experiência na criação de microfrontends responsivos,
-            com uma dedicação especial em alcançar alta fidelidade aos designs
-            fornecidos pelo UX Designer da Cardano Warriors. Tive a oportunidade de
-            trabalhar no desenvolvimento da nova plataforma Cardano Warriors,
-            onde aplicamos a arquitetura de microfrontends utilizando Vue 3 com
-            Vitejs, Typescript e Sass.
-            Durante esse projeto, tivemos a iniciativa de criar uma biblioteca (ui-kit)
-            para o reaproveitamento de componentes em todos os microfrontends.
-            Essa abordagem permitiu uma maior eficiência e consistência no
-            desenvolvimento, garantindo uma experiência unificada aos usuários.
+            {{ $t('pages.resume.experienceCardano') }}
           </p>
         </li>
 
@@ -92,13 +84,7 @@ useHead({
           <span>Convertize | 02/2022 - 11/2022</span>
 
           <p class="timeline-text">
-            Desenvolvimento de landing pages e lojinhas para os clientes da
-            Convertize utilizando uma ampla gama de tecnologias, incluindo HTML5,
-            CSS3, Javascript, Django, Jquery, Bootstrap e React.js.
-            Responsável pelo atendimento personalizado aos clientes, solucionando
-            problemas específicos relacionados ao Front-End.
-            Realização do fechamento de chamados, garantindo a resolução eficiente
-            de questões e a satisfação dos clientes.
+            {{ $t('pages.resume.experienceConvertizePleno') }}
           </p>
         </li>
 
@@ -110,13 +96,7 @@ useHead({
           <span>Convertize | 05/2021 - 02/2022</span>
 
           <p class="timeline-text">
-            Trabalhei com a criação e manutenção das páginas do E-commerce da
-            Convertize, utilizando HTML5, CSS3, Django e Bootstrap.
-            Trabalhei em colaboração com a equipe de Analistas de Suporte,
-            prestando atendimento a chamados tanto por telefone como por meio de
-            Helpdesk via chat, e fui responsável por fornecer suporte técnico e
-            solucionar problemas dos clientes, garantindo uma experiência de
-            atendimento eficiente e satisfatória.
+            {{ $t('pages.resume.experienceConvertizeJunior') }}
           </p>
         </li>
       </ol>

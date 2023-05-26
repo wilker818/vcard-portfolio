@@ -23,7 +23,12 @@
         "resume": {
             "title": "Currículo",
             "titleEducation": "Formação acadêmica",
+            "textEducationEtecJose":"Ensino técnico: Desenvolvimento de Sistemas",   
+            "textResumeEtecJose":"Desenvolvi projetos individuais e em equipe, aplicando conhecimentos em linguagens como Java, Obeject Pascal(Delphi), PHP, Javascript e SQL. Aprendi sobre o ciclo de vida do desenvolvimento de software e metodologias ágeis.",
             "titleExperience": "Histórico profissional",
+            "experienceCardano":"Tenho uma ampla experiência na criação de microfrontends responsivos, com uma dedicação especial em alcançar alta fidelidade aos designs fornecidos pelo UX Designer da Cardano Warriors. Tive a oportunidade de trabalhar no desenvolvimento da nova plataforma Cardano Warriors, onde aplicamos a arquitetura de microfrontends utilizando Vue 3 com Vitejs, Typescript e Sass. Durante esse projeto, tivemos a iniciativa de criar uma biblioteca (ui-kit) para o reaproveitamento de componentes em todos os microfrontends. Essa abordagem permitiu uma maior eficiência e consistência no desenvolvimento, garantindo uma experiência unificada aos usuários.",
+            "experienceConvertizePleno":"Desenvolvimento de landing pages e lojinhas para os clientes da Convertize utilizando uma ampla gama de tecnologias, incluindo HTML5, CSS3, Javascript, Django, Jquery, Bootstrap e React.js. Responsável pelo atendimento personalizado aos clientes, solucionando problemas específicos relacionados ao Front-End. Realização do fechamento de chamados, garantindo a resolução eficiente de questões e a satisfação dos clientes.",
+            "experienceConvertizeJunior":"Trabalhei com a criação e manutenção das páginas do E-commerce da Convertize, utilizando HTML5, CSS3, Django e Bootstrap. Trabalhei em colaboração com a equipe de Analistas de Suporte, prestando atendimento a chamados tanto por telefone como por meio de Helpdesk via chat, e fui responsável por fornecer suporte técnico e solucionar problemas dos clientes, garantindo uma experiência de atendimento eficiente e satisfatória.",
             "titleSkills": "Minhas habilidades"
            
         },

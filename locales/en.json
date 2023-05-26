@@ -23,9 +23,13 @@
         "resume": {
             "title": "Resume",
             "titleEducation": "Education",
+            "textEducationEtecJose": "Technical education: Systems Development",
+            "textResumeEtecJose": "I developed individual and team projects, applying knowledge in languages such as Java, Object Pascal (Delphi), PHP, JavaScript, and SQL. I learned about the software development life cycle and agile methodologies.",
             "titleExperience": "Experience",
+            "experienceCardano": "I have extensive experience in creating responsive microfrontends, with a special dedication to achieving high fidelity to the designs provided by Cardano Warriors' UX Designer. I had the opportunity to work on the development of the new Cardano Warriors platform, where we implemented the microfrontends architecture using Vue 3 with Vitejs, Typescript, and Sass. During this project, we took the initiative to create a library (ui-kit) for component reuse across all microfrontends. This approach enabled greater efficiency and consistency in development, ensuring a unified user experience.",
+            "experienceConvertizePleno": "Developed landing pages and online stores for Convertize's clients using a wide range of technologies, including HTML5, CSS3, JavaScript, Django, jQuery, Bootstrap, and React.js. Responsible for providing personalized customer support, solving specific Front-End-related issues. Managed ticket closure to ensure efficient issue resolution and customer satisfaction.",
+            "experienceConvertizeJunior": "Worked on the creation and maintenance of Convertize's E-commerce pages using HTML5, CSS3, Django, and Bootstrap. Collaborated with the Support Analyst team, handling customer inquiries via phone and helpdesk chat, providing technical support and resolving customer issues to ensure an efficient and satisfactory customer experience.",
             "titleSkills": "My skills"
-           
         },
         "contact": {
             "title": "Contact",

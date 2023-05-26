@@ -9,7 +9,7 @@ onMounted(() => {
 })
 
 const { locale } = useI18n({ useScope: 'global' })
-
+const disableService = ref(false)
 /* Testimonials */
 const { data: testimonials } = await useFetch('/api/testimonials')
 
@@ -68,7 +68,7 @@ const { data: services } = await useFetch('/api/services')
     </section>
 
     <!-- service -->
-    <section class="service">
+    <section v-if="disableService" class="service">
       <h3 class="h3 service-title">
         {{ $t('pages.index.TitleWhatIamDoing') }}
       </h3>

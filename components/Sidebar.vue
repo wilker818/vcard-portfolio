@@ -10,7 +10,7 @@ function toggleMenu() {
   <aside class="sidebar" :class="{ active: isOpen }">
     <div class="sidebar-info">
       <figure class="avatar-box">
-        <img src="/images/my-avatar.jpeg" alt="Wilker Ferreira" width="80">
+        <img src="/images/my-avatar.png" alt="Wilker Ferreira" width="80">
       </figure>
 
       <div class="info-content">
@@ -93,7 +93,6 @@ function toggleMenu() {
       </ul>
 
       <div class="separator" />
-
       <ul class="social-list">
         <LangSwitcher2 title="translate" />
       </ul>

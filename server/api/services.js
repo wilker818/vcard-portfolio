@@ -4,7 +4,7 @@ export default defineEventHandler(() => {
   return [
     {
       id: 1,
-      title: 'Laravel',
+      title: 'AWS',
       description: {
         en: 'I build modern and advanced websites and applications with Laravel, the PHP framework.',
         pt: 'PHP frameworkü olan Laravel ile modern ve gelişmiş web siteleri ve uygulamaları yapıyorum.',

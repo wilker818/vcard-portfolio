@@ -19,6 +19,21 @@
             "textAbout6": "I am open to challenging new opportunities where I can apply my experience and knowledge to drive team and company growth.",
             "textAbout7": "Please feel free to contact me to discuss how I can contribute to the success of your organization.",
             "TitleWhatIamDoing": "What I'm Doing?"
+        },
+        "resume": {
+            "title": "Resume",
+            "titleEducation": "Education",
+            "titleExperience": "Experience",
+            "titleSkills": "My skills"
+           
+        },
+        "contact": {
+            "title": "Contact",
+            "titleContactForm": "Contact Form",
+            "placeholderFullName": "Full name",
+            "placeholderEmailAdress": "Email address",
+            "placeholderYourMessage": "Your Message",
+            "buttonSendMessage": "Send Message"
         }
     }
 }

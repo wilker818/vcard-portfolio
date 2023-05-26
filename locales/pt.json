@@ -29,11 +29,11 @@
         },
         "contact": {
             "title": "Contato",
-            "titleContactForm": "Formação acadêmica",
-            "placeholderFullName": "Full name",
-            "placeholderEmailAdress": "Email address",
-            "placeholderYourMessage": "Your Message",
-            "buttonSendMessage": "Send Message"
+            "titleContactForm": "Formulário de Contato",
+            "placeholderFullName": "Nome Completo",
+            "placeholderEmailAdress": "Email",
+            "placeholderYourMessage": "Digite sua mensagem...",
+            "buttonSendMessage": "Enviar mensagem"
         }
     }
 }

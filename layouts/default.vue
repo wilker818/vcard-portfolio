@@ -11,7 +11,7 @@ useHead({
   },
   link: [
     {
-      rel: 'icon', type: 'image/png', href: '/nuxt.png',
+      rel: 'icon', type: 'image/png', href: '/favicon.png',
     },
     {
       rel: 'preconnect',

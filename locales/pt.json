@@ -1,0 +1,39 @@
+{
+    "hello": "Olá",
+    "goodbye": "Tchau",
+    "pageTitles": {
+        "about": "Sobre",
+        "resume": "Currículo",
+        "portfolio": "Portfólio",
+        "blog": "Blog",
+        "contact": "Contato"
+    },
+    "pages": {
+        "index": {
+            "title": "Sobre",
+            "textAbout": "Sou um Desenvolvedor front-end com experiência em manutenção e criação de páginas em alta fidelidade, sempre utilizando as frameworks mais robustas do mercado para testes e criação, além disso, possuo experiência em atendimento ao cliente.",
+            "textAbout2": "Iniciei minha carreira como Desenvolvedor front-End Júnior na Convertize, onde utilizei HTML5, CSS3, Django e Bootstrap para desenvolver e manter as páginas do e-commerce. Também trabalhei em estreita colaboração com a equipe de Analistas de Suporte, fornecendo atendimento por telefone e Helpdesk via chat.",
+            "textAbout3": "Ao progredir na minha carreira, assumi o cargo de Desenvolvedor Front-End Pleno na Convertize. Nessa função, fui responsável pela criação de landing pages e lojas personalizadas para os clientes, utilizando HTML5, CSS3, Javascript, Django, jQuery, Bootstrap e React.js. Também liderei o atendimento e a resolução de chamados específicos relacionados a problemas de Front-End.",
+            "textAbout4": "Mais recentemente, juntei-me à equipe de desenvolvimento da Cardano Warriors como engenheiro de software (front-end). No projeto, concentrei-me na criação de micro-frontends altamente responsivos, seguindo as diretrizes estabelecidas pelo UX Designer da Cardano Warriors, utilizando ViteJS, Vue 3, TypeScript, Sass e VueI18N. Além disso, participei ativamente da criação da nossa biblioteca (ui-kit) para concentrarmos todos os componentes e regras de negócios.",
+            "textAbout5": "Estou constantemente buscando aprimorar minhas habilidades técnicas e acompanhar as últimas tendências no desenvolvimento front-end. Sou apaixonado por criar interfaces atraentes, oferecer soluções eficientes e contribuir para o sucesso dos projetos em que estou envolvido.",
+            "textAbout6": "Estou aberto a novas oportunidades desafiadoras, onde possa aplicar minha experiência e conhecimento para impulsionar o crescimento de equipes e empresas.",
+            "textAbout7": "Sinta-se à vontade para entrar em contato comigo para discutirmos como posso contribuir para o sucesso da sua organização.",
+            "TitleWhatIamDoing": "O que estou fazendo?"
+        },
+        "resume": {
+            "title": "Currículo",
+            "titleEducation": "Formação acadêmica",
+            "titleExperience": "Histórico profissional",
+            "titleSkills": "Minhas habilidades"
+           
+        },
+        "contact": {
+            "title": "Contato",
+            "titleContactForm": "Formação acadêmica",
+            "placeholderFullName": "Full name",
+            "placeholderEmailAdress": "Email address",
+            "placeholderYourMessage": "Your Message",
+            "buttonSendMessage": "Send Message"
+        }
+    }
+}

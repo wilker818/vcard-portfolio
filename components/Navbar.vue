@@ -24,9 +24,9 @@
       </li>
 
       <li class="navbar-item">
-        <NuxtLink to="/contact" class="navbar-link">
+        <a href="https://www.linkedin.com/in/wilker-ferreira/" target="_blank" class="navbar-link">
           {{ $t('pageTitles.contact') }}
-        </NuxtLink>
+        </a>
       </li>
     </ul>
   </nav>

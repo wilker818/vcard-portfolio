@@ -28,6 +28,7 @@
   "dependencies": {
     "@egjs/vue3-flicking": "^4.10.0",
     "@pinia-orm/nuxt": "^1.1.0",
+    "@vercel/analytics": "^1.0.1",
     "primeicons": "^6.0.1",
     "primevue": "^3.17.0",
     "vue-cookies": "^1.8.1"

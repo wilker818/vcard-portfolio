@@ -45,7 +45,7 @@ function closeItem() {
   <article class="portfolio active" data-page="portfolio">
     <header>
       <h2 class="h2 article-title">
-        {{ $t('pageTitles.portfolio') }}
+        {{ $t('pages.portfolio.title') }}
       </h2>
     </header>
 
@@ -53,7 +53,7 @@ function closeItem() {
       <ul class="filter-list">
         <li class="filter-item">
           <button :class="{ active: activeCategory === 0 }" @click="changeFilter(0)">
-            All
+            {{ $t('pages.portfolio.buttonAll') }}
           </button>
         </li>
 

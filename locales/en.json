@@ -8,6 +8,11 @@
         "blog": "Blog",
         "contact": "Contact"
     },
+    "notFound": {
+        "title": "Page Not Found",
+        "textDescription": "The Page you are looking for doesn't exist or an other error occured.",
+        "buttonGoBack": "Go back"
+    },
     "pages": {
         "index": {
             "title": "About",
@@ -38,6 +43,10 @@
             "placeholderEmailAdress": "Email address",
             "placeholderYourMessage": "Your Message",
             "buttonSendMessage": "Send Message"
+        },
+        "portfolio": {
+            "title": "Portfolio",
+            "buttonAll": "All"
         }
     }
 }

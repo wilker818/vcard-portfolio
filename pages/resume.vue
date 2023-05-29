@@ -78,7 +78,7 @@ useHead({
 
         <li class="timeline-item">
           <h4 class="h4 timeline-item-title">
-            Desennvolvedor front-end Pleno - Ribeirão Preto - SP.
+            Desenvolvedor front-end Pleno - Ribeirão Preto - SP.
           </h4>
 
           <span>Convertize | 02/2022 - 11/2022</span>
@@ -90,7 +90,7 @@ useHead({
 
         <li class="timeline-item">
           <h4 class="h4 timeline-item-title">
-            Desennvolvedor front-end Júnior - Ribeirão Preto - SP.
+            Desenvolvedor front-end Júnior - Ribeirão Preto - SP.
           </h4>
 
           <span>Convertize | 05/2021 - 02/2022</span>

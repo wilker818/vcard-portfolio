@@ -1,20 +1,25 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import { useI18n } from "vue-i18n";
-// import Flicking from "@egjs/vue3-flicking";
+import { ref, onMounted } from "vue";
+import { useI18n, Locale } from "vue-i18n";
+import { CategoryLocalesTitle } from "~/interfaces/categories";
 
-// import "@egjs/vue3-flicking/dist/flicking.css";
+import { Project } from "~/interfaces/projects";
 
-const { t, locale } = useI18n({ useScope: "global" });
+const { t } = useI18n({ useScope: "global" });
 const { data: projects } = await useFetch("/api/projects");
 const { data: categories } = await useFetch("/api/categories");
 
-const projectList = [...projects.value];
+const locale = ref<Locale>("");
+
+const projectList = ref<Project[]>([]);
+if (projects.value) {
+  projectList.value = projects.value;
+}
 const activeCategory = ref(0);
 const filterMenu = ref(false);
-const activeCategoryName = ref("");
+const activeCategoryName = ref<CategoryLocalesTitle | string>("");
 
-const activeItem = ref({});
+const activeItem = ref<Project | undefined>(undefined);
 const activeModal = ref(false);
 const activeOverlay = ref(false);
 
@@ -22,24 +27,32 @@ useHead({
   title: "Portfolio",
 });
 
+onMounted(() => {
+  projects;
+  categories;
+});
+
 function changeFilter(id: number) {
   activeCategory.value = id;
-  if (id !== 0)
-    activeCategoryName.value = categories.value.find(
-      (item) => item.id === id
-    ).title;
-
+  if (id !== 0) {
+    const category = categories.value?.find((item) => item.id === id);
+    if (category) {
+      activeCategoryName.value = category.title;
+    }
+  } else {
+    activeCategoryName.value = "";
+  }
   filterMenu.value = !filterMenu.value;
 }
 
-function showItem(id) {
-  activeItem.value = projects.value.find((item) => item.id === id);
+function showItem(id: number) {
+  activeItem.value = projects.value?.find((item) => item.id === id);
   activeModal.value = true;
   activeOverlay.value = true;
 }
 
 function closeItem() {
-  activeItem.value = {};
+  activeItem.value = undefined;
   activeModal.value = false;
   activeOverlay.value = false;
 }
@@ -86,8 +99,10 @@ function closeItem() {
             {{
               activeCategory !== 0
                 ? locale === "en"
-                  ? activeCategoryName?.en
-                  : activeCategoryName?.pt
+                  ? typeof activeCategoryName === "object" &&
+                    activeCategoryName.en
+                  : typeof activeCategoryName === "object" &&
+                    activeCategoryName.pt
                 : "Select Category"
             }}
           </div>
@@ -129,8 +144,7 @@ function closeItem() {
               <div class="project-item-icon-box">
                 <ion-icon name="eye-outline" />
               </div>
-
-              <img :src="project.image" :alt="project.title" loading="lazy" />
+              <nuxt-img :src="project.image" :alt="project.title" />
             </figure>
 
             <h3 class="project-title">{{ project.title }}</h3>
@@ -161,27 +175,27 @@ function closeItem() {
           <div>
             <figure>
               <img
-                :src="activeItem.image"
+                :src="activeItem?.image"
                 class="rounded-lg"
-                :alt="activeItem.title"
+                :alt="activeItem?.title"
               />
             </figure>
           </div>
 
           <div class="modal-content space-y-3 mt-4">
             <h4 class="h3 modal-title">
-              {{ activeItem.title }}
+              {{ activeItem?.title }}
             </h4>
 
             <small class="flex items-center justify-start gap-2 text-gray-500">
               <span>20 May, 2023</span> |
               <span>{{
                 locale === "en"
-                  ? activeItem.category?.title?.en
-                  : activeItem.category?.title?.pt
+                  ? activeItem?.category?.title?.en
+                  : activeItem?.category?.title?.pt
               }}</span>
               |
-              <a :href="activeItem.linkToProject" target="_blank"
+              <a :href="activeItem?.linkToProject" target="_blank"
                 >View Project</a
               >
             </small>
@@ -190,8 +204,8 @@ function closeItem() {
               class="text-justify"
               v-html="
                 locale === 'en'
-                  ? activeItem.content?.en
-                  : activeItem.content?.pt
+                  ? activeItem?.content?.en
+                  : activeItem?.content?.pt
               "
             />
           </div>

@@ -18,8 +18,6 @@ onMounted(() => {
 });
 
 function changeLocation(ev: any) {
-  console.log(ev);
-
   cookieLocale.setLocale(ev.value);
   localStorage.setItem("locale", ev.value);
 }

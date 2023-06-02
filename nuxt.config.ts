@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/tailwindcss",
     "@intlify/nuxt3",
-    "@nuxt/image-edge",
   ],
   experimental: {
     reactivityTransform: true,

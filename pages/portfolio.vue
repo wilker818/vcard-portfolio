@@ -144,7 +144,7 @@ function closeItem() {
               <div class="project-item-icon-box">
                 <ion-icon name="eye-outline" />
               </div>
-              <nuxt-img :src="project.image" :alt="project.title" />
+              <img :src="project.image" :alt="project.title" />
             </figure>
 
             <h3 class="project-title">{{ project.title }}</h3>

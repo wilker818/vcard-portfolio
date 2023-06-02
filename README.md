@@ -1,39 +1,42 @@
-<h2 align="center">
+# Nuxt 3 Minimal Starter
 
-vCard Portfolio Nuxt 3 Template<br>
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-</h2><br>
+## Setup
 
-## Features
+Make sure to install the dependencies:
 
-- [💚 Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
+```bash
+# yarn
+yarn install
 
-- ⚡️ Vite - Instant HMR
+# npm
+npm install
 
-- 🎨 [Tailwind CSS](https://github.com/tailwindcss) - A utility-first CSS framework packed.
+# pnpm
+pnpm install
+```
 
-- :eight_spoked_asterisk: [PrimeVue](https://www.primefaces.org/primevue/) - PrimeVue is a rich set of open source native components for Vue.
+## Development Server
 
-- 🔥 The `<script setup>` syntax
+Start the development server on `http://localhost:3000`
 
-- 🍍 [State Management via Pinia](https://pinia.esm.dev), see [./composables/user.ts](./composables/user.ts)
+```bash
+npm run dev
+```
 
-- 📑 [Layout system](./layouts)
+## Production
 
-- 📥 APIs auto importing - for Composition API, VueUse and custom composables.
+Build the application for production:
 
-- 🏎 Zero-config cloud functions and deploy
+```bash
+npm run build
+```
 
-- 🦾 TypeScript, of course
+Locally preview production build:
 
-## Plugins
+```bash
+npm run preview
+```
 
-### Nuxt Modules
-
-- [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs.
-- [ColorMode](https://github.com/nuxt-community/color-mode-module) - dark and Light mode with auto detection made easy with Nuxt.
-- [Pinia](https://pinia.esm.dev/) - intuitive, type safe, light and flexible Store for Vue.
-
-### Clone to local
-
-If you prefer to do it manually with the cleaner git history
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

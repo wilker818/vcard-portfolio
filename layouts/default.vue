@@ -1,45 +1,49 @@
-<script setup>
-import { useI18n } from 'vue-i18n'
-const { locale } = useI18n({ useScope: 'global' })
+<script setup lang="ts">
+import { useI18n } from "vue-i18n";
+const { locale } = useI18n({ useScope: "global" });
 
 useHead({
   htmlAttrs: {
     lang: locale,
   },
   titleTemplate: (pageTitle) => {
-    return pageTitle ? `${pageTitle} - Wilker Ferreira - Developer` : 'Wilker Ferreira - Developer'
+    return pageTitle
+      ? `${pageTitle} - Wilker Ferreira - Developer`
+      : "Wilker Ferreira - Developer";
   },
   link: [
     {
-      rel: 'icon', type: 'image/png', href: '/favicon.png',
+      rel: "icon",
+      type: "image/png",
+      href: "/favicon.png",
     },
     {
-      rel: 'preconnect',
-      href: 'https://fonts.googleapis.com',
+      rel: "preconnect",
+      href: "https://fonts.googleapis.com",
     },
     {
-      rel: 'preconnect',
-      href: 'https://fonts.gstatic.com',
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com",
     },
     {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap',
-      crossorigin: '',
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap",
+      crossorigin: "",
     },
   ],
   script: [
     {
-      src: 'https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js',
+      src: "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js",
       body: false,
-      type: 'module',
+      type: "module",
     },
     {
-      src: 'https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js',
+      src: "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js",
       body: false,
       nomodule: true,
     },
   ],
-})
+});
 </script>
 
 <template>

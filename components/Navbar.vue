@@ -1,31 +1,33 @@
-<script setup>
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <nav class="navbar">
     <ul class="navbar-list">
       <li class="navbar-item">
         <NuxtLink to="/" class="navbar-link">
-          {{ $t('pageTitles.about') }}
+          {{ $t("pageTitles.about") }}
         </NuxtLink>
       </li>
 
       <li class="navbar-item">
         <NuxtLink to="/resume" class="navbar-link">
-          {{ $t('pageTitles.resume') }}
+          {{ $t("pageTitles.resume") }}
         </NuxtLink>
       </li>
 
       <li class="navbar-item">
         <NuxtLink to="/portfolio" class="navbar-link">
-          {{ $t('pageTitles.portfolio') }}
+          {{ $t("pageTitles.portfolio") }}
         </NuxtLink>
       </li>
 
       <li class="navbar-item">
-        <a href="https://www.linkedin.com/in/wilker-ferreira/" target="_blank" class="navbar-link">
-          {{ $t('pageTitles.contact') }}
+        <a
+          href="https://www.linkedin.com/in/wilker-ferreira/"
+          target="_blank"
+          class="navbar-link"
+        >
+          {{ $t("pageTitles.contact") }}
         </a>
       </li>
     </ul>

@@ -19,6 +19,7 @@ export const useCookieStore = defineStore("cookieStore", () => {
   const getCookie = computed(() => {
     return cookie.value;
   });
+
   return {
     cookie,
     setCookie,

@@ -72,7 +72,6 @@ useHead({
 
 <template>
   <main class="relative">
-    u
     <Sidebar />
     <div class="main-content">
       <Navbar />

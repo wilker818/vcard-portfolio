@@ -9,7 +9,7 @@ const cookieLocale = useLocaleStore();
 
 locale.value = cookieLocale.getLocale || "pt";
 
-const loadingPage: Ref<boolean> = ref();
+const loadingPage: Ref<boolean | undefined> = ref();
 
 onBeforeMount(() => {
   loadingPage.value = false;
@@ -23,12 +23,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <!--  <LoadingPage v-show="!loadingPage" /> -->
-  <!-- <NuxtLayout>
+  <LoadingPage v-show="!loadingPage" />
+  <NuxtLayout>
     <NuxtPage transition />
-  </NuxtLayout> -->
-
-  <NuxtWelcome />
+  </NuxtLayout>
 </template>
 
 <style>

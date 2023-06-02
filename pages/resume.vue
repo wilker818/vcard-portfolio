@@ -34,8 +34,8 @@ useHead({
           <span>2023 — 2025</span>
 
           <p class="timeline-text">
-            Curso Superior de Tecnologia (CST): Análise e Desenvolvimento de
-            Sistemas
+            {{ t("pages.resume.textEducationCruzeiro") }}<br />
+            {{ t("pages.resume.textResumeCruzeiro") }}
           </p>
         </li>
 

@@ -17,6 +17,12 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "plugins": ["prettier", "@typescript-eslint"],
+  "globals": {
+    "useFetch": true,
+    "useHead": true,
+    "useRouter": true,
+    "useColorMode": true
+  },
   "rules": {
     "prettier/prettier": [
       "error",

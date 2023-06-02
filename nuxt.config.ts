@@ -9,9 +9,8 @@ export default defineNuxtConfig({
   ],
   experimental: {
     reactivityTransform: true,
-    viteNode: false,
   },
-  //plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
+  plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
   colorMode: {
     classSuffix: "",
   },
@@ -26,7 +25,6 @@ export default defineNuxtConfig({
     },
   },
   css: [
-    // "primevue/resources/themes/bootstrap4-dark-blue/theme.css",
     "primevue/resources/primevue.css",
     "primeicons/primeicons.css",
     "/assets/css/style.css",
@@ -42,16 +40,8 @@ export default defineNuxtConfig({
     viewer: true,
   },
   vue: {
-    config: {
-      productionTip: true,
-      warn: false,
-    },
     compilerOptions: {
       isCustomElement: (tag: string) => tag.startsWith("ion-"),
     },
-  },
-  loading: {
-    color: "blue",
-    height: "5px",
   },
 });

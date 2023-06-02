@@ -39,3 +39,12 @@ New vCard Portfolio Nuxt 3 Template<br>
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
+
+### Thanks
+
+vCard Portfolio Nuxt Template
+- Designer creator: https://github.com/afsakar/vcard-portfolio
+- Creator of the structure in NUXT: https://github.com/codewithsadee/vcard-personal-portfolio
+
+###
+

@@ -67,7 +67,7 @@ useHead({
         <li class="timeline-item">
           <h4 class="h4 timeline-item-title">Software engineer - Brasil.</h4>
 
-          <span>Cardano Warriors | 02/2023 - Atual</span>
+          <span>Cardano Warriors | 02/2022 - 06/2023</span>
 
           <p class="timeline-text">
             {{ t("pages.resume.experienceCardano") }}

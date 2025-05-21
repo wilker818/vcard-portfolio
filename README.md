@@ -1,50 +1,75 @@
-<h2 align="center">
+# Nuxt Minimal Starter
 
-New vCard Portfolio Nuxt 3 Template<br>
+Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-</h2><br>
+## Setup
 
-## Features
+Make sure to install dependencies:
 
-- [💚 Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
+```bash
+# npm
+npm install
 
-- ⚡️ Vite - Instant HMR
+# pnpm
+pnpm install
 
-- 🎨 [Tailwind CSS](https://github.com/tailwindcss) - A utility-first CSS framework packed.
+# yarn
+yarn install
 
-- :eight_spoked_asterisk: [PrimeVue](https://www.primefaces.org/primevue/) - PrimeVue is a rich set of open source native components for Vue.
+# bun
+bun install
+```
 
-- 🔥 The `<script setup lang="ts">` syntax
+## Development Server
 
-- 🍍 [State Management via Pinia](https://pinia.esm.dev), see [./composables/user.ts](./composables/user.ts)
+Start the development server on `http://localhost:3000`:
 
-- 📑 [Layout system](./layouts)
+```bash
+# npm
+npm run dev
 
-- 📥 APIs auto importing - for Composition API and Typescript, VueUse and custom composables.
+# pnpm
+pnpm dev
 
-- 🏎 Zero-config cloud functions and deploy.
+# yarn
+yarn dev
 
-- 🦾 Full TypeScript, of course.
+# bun
+bun run dev
+```
 
-- 🛠️ Eslint and Prettier, for better code maintenance and organization.
+## Production
 
-## Plugins
+Build the application for production:
 
-### Nuxt Modules
+```bash
+# npm
+npm run build
 
-- [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs.
-- [ColorMode](https://github.com/nuxt-community/color-mode-module) - dark and Light mode with auto detection made easy with Nuxt.
-- [Pinia](https://pinia.esm.dev/) - intuitive, type safe, light and flexible Store for Vue.
+# pnpm
+pnpm build
 
-### Clone to local
+# yarn
+yarn build
 
-If you prefer to do it manually with the cleaner git history
+# bun
+bun run build
+```
 
-### Thanks
+Locally preview production build:
 
-vCard Portfolio Nuxt Template
-- Designer creator: https://github.com/afsakar/vcard-portfolio
-- Creator of the structure in NUXT: https://github.com/codewithsadee/vcard-personal-portfolio
+```bash
+# npm
+npm run preview
 
-###
+# pnpm
+pnpm preview
 
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.

@@ -1,9 +1,9 @@
 export interface CategoryLocalesTitle {
-  en: string;
-  pt: string;
+    en: string;
+    pt: string;
 }
 
 export interface Category {
-  id: number;
-  title: CategoryLocalesTitle;
+    id: number;
+    title: CategoryLocalesTitle;
 }

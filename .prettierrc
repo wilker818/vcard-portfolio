@@ -1,16 +1,16 @@
 {
-    "trailingComma": "es5",
-    "tabWidth": 2,
-    "semi": true,
-    "singleQuote": false,
-    "overrides": [
-      {
-        "files": "*.ts",
-        "options": {
-          "parser": "typescript"
-        }
+  "trailingComma": "es5",
+  "tabWidth": 4,
+  "semi": true,
+  "singleQuote": false,
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": "*.ts",
+      "options": {
+        "parser": "typescript"
       }
-    ],
-    "eslintIntegration": true
-  }
-  
+    }
+  ],
+  "eslintIntegration": true
+}

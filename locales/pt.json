@@ -1,54 +1,126 @@
 {
-  "hello": "Olá",
-  "goodbye": "Tchau",
-  "pageTitles": {
-    "about": "Sobre",
-    "resume": "Currículo",
-    "portfolio": "Portfólio",
-    "blog": "Blog",
-    "contact": "Contato"
-  },
-  "notFound": {
-    "title": "Página não encontrada",
-    "textDescription": "A página que você está procurando não existe ou ocorreu algum outro erro.",
-    "buttonGoBack": "Voltar"
-  },
-  "pages": {
-    "index": {
-      "title": "Sobre",
-      "textAbout": "Sou um desenvolvedor front-end com experiência em manutenção e criação de páginas com alta fidelidade, sempre utilizando as frameworks mais robustas do mercado para testes e desenvolvimento. Além disso, possuo experiência em suporte ao cliente.",
-      "textAbout2": "Iniciei minha carreira como Desenvolvedor Front-End Júnior na Convertize, onde utilizei HTML5, CSS3, Django e Bootstrap para desenvolver e manter páginas de e-commerce. Também trabalhei em estreita colaboração com a equipe de Analistas de Suporte, fornecendo suporte telefônico e assistência via chat no Helpdesk.",
-      "textAbout3": "Conforme avancei na minha carreira, assumi o cargo de Desenvolvedor Front-End Pleno na Convertize. Nessa função, fui responsável pela criação de landing pages e lojas personalizadas para os clientes, utilizando HTML5, CSS3, JavaScript, Django, jQuery, Bootstrap e React.js. Também liderei o suporte e a resolução de problemas específicos relacionados ao Front-End.",
-      "textAbout4": "Mais recentemente, juntei-me à equipe de desenvolvimento da Cardano Warriors como Engenheiro de Software (front-end). No projeto, foquei na criação de micro-frontends altamente responsivos, seguindo as diretrizes definidas pelo UX Designer da Cardano Warriors, utilizando ViteJS, Vue 3, TypeScript, Sass e VueI18N. Além disso, participei ativamente da criação da nossa biblioteca de interface (ui-kit) para consolidar todos os componentes e regras de negócios.",
-      "textAbout5": "Estou constantemente buscando aprimorar minhas habilidades técnicas e me manter atualizado com as últimas tendências no desenvolvimento front-end. Sou apaixonado por criar interfaces atraentes, oferecer soluções eficientes e contribuir para o sucesso dos projetos nos quais estou envolvido.",
-      "textAbout6": "Estou aberto a novas oportunidades desafiadoras, onde posso aplicar minha experiência e conhecimento para impulsionar o crescimento da equipe e da empresa.",
-      "textAbout7": "Sinta-se à vontade para entrar em contato comigo para discutir como posso contribuir para o sucesso da sua organização.",
-      "TitleWhatIamDoing": "O que estou fazendo?"
+    "hello": "Olá",
+    "goodbye": "Tchau",
+    "pageTitles": {
+        "about": "Sobre",
+        "resume": "Currículo",
+        "portfolio": "Portfólio",
+        "blog": "Blog",
+        "contact": "Contato"
     },
-    "resume": {
-      "title": "Currículo",
-      "titleEducation": "Formação",
-      "textEducationCruzeiro": "Curso Superior de Tecnologia: Análise e desenvolvimento de sistemas",
-      "textResumeCruzeiro": "Este curso proporciona contato direto com conteúdos pertinentes à Tecnologia da Informação, com foco em desenvolvimento de software, gestão de negócios, documentação e sistemas.",
-      "textEducationEtecJose": "Educação técnica: Desenvolvimento de Sistemas",
-      "textResumeEtecJose": "Desenvolvi projetos individuais e em equipe, aplicando conhecimentos em linguagens como Java, Object Pascal (Delphi), PHP, JavaScript e SQL. Aprendi sobre o ciclo de vida do desenvolvimento de software e metodologias ágeis.",
-      "titleExperience": "Experiência",
-      "experienceCardano": "Tenho ampla experiência na criação de microfrontends responsivos, com dedicação especial em alcançar alta fidelidade aos designs fornecidos pelo UX Designer da Cardano Warriors. Tive a oportunidade de trabalhar no desenvolvimento da nova plataforma Cardano Warriors, onde implementamos a arquitetura de microfrontends usando Vue 3 com Vitejs, TypeScript e Sass. Durante esse projeto, tomamos a iniciativa de criar uma biblioteca (ui-kit) para reutilização de componentes em todos os microfrontends. Essa abordagem permitiu maior eficiência e consistência no desenvolvimento, garantindo uma experiência unificada para os usuários.",
-      "experienceConvertizePleno": "Desenvolvi landing pages e lojas online para os clientes da Convertize, utilizando diversas tecnologias, incluindo HTML5, CSS3, JavaScript, Django, jQuery, Bootstrap e React.js. Responsável por fornecer suporte personalizado ao cliente, solucionar problemas específicos relacionados ao Front-End. Gerenciava o encerramento de chamados para garantir uma resolução eficiente de problemas e satisfação do cliente.",
-      "experienceConvertizeJunior": "Trabalhei na criação e manutenção das páginas de e-commerce da Convertize, utilizando HTML5, CSS3, Django e Bootstrap. Colaborei com a equipe de Analistas de Suporte, lidando com consultas de clientes por telefone e chat no Helpdesk, fornecendo suporte técnico e resolvendo problemas do cliente para garantir uma experiência eficiente e satisfatória.",
-      "titleSkills": "Minhas habilidades"
+    "notFound": {
+        "title": "Página não encontrada",
+        "textDescription": "A página que você está procurando não existe ou ocorreu algum outro erro.",
+        "buttonGoBack": "Voltar"
     },
-    "contact": {
-      "title": "Contato",
-      "titleContactForm": "Formulário de Contato",
-      "placeholderFullName": "Nome completo",
-      "placeholderEmailAdress": "Endereço de e-mail",
-      "placeholderYourMessage": "Sua mensagem",
-      "buttonSendMessage": "Enviar mensagem"
-    },
-    "portfolio": {
-      "title": "Portfólio",
-      "buttonAll": "Todos"
+    "pages": {
+        "index": {
+            "title": "Sobre",
+            "textAbout": "Sou um desenvolvedor front-end com experiência em manutenção e criação de páginas com alta fidelidade, sempre utilizando as frameworks mais robustas do mercado para testes e desenvolvimento. Além disso, possuo experiência em suporte ao cliente.",
+            "textAbout2": "Iniciei minha carreira como Desenvolvedor Front-End Júnior na Convertize, onde utilizei HTML5, CSS3, Django e Bootstrap para desenvolver e manter páginas de e-commerce. Também trabalhei em estreita colaboração com a equipe de Analistas de Suporte, fornecendo suporte telefônico e assistência via chat no Helpdesk.",
+            "textAbout3": "Conforme avancei na minha carreira, assumi o cargo de Desenvolvedor Front-End Pleno na Convertize. Nessa função, fui responsável pela criação de landing pages e lojas personalizadas para os clientes, utilizando HTML5, CSS3, JavaScript, Django, jQuery, Bootstrap e React.js. Também liderei o suporte e a resolução de problemas específicos relacionados ao Front-End.",
+            "textAbout4": "Mais recentemente, juntei-me à equipe de desenvolvimento da Cardano Warriors como Engenheiro de Software (front-end). No projeto, foquei na criação de micro-frontends altamente responsivos, seguindo as diretrizes definidas pelo UX Designer da Cardano Warriors, utilizando ViteJS, Vue 3, TypeScript, Sass e VueI18N. Além disso, participei ativamente da criação da nossa biblioteca de interface (ui-kit) para consolidar todos os componentes e regras de negócios.",
+            "textAbout5": "Estou constantemente buscando aprimorar minhas habilidades técnicas e me manter atualizado com as últimas tendências no desenvolvimento front-end. Sou apaixonado por criar interfaces atraentes, oferecer soluções eficientes e contribuir para o sucesso dos projetos nos quais estou envolvido.",
+            "textAbout6": "Estou aberto a novas oportunidades desafiadoras, onde posso aplicar minha experiência e conhecimento para impulsionar o crescimento da equipe e da empresa.",
+            "textAbout7": "Sinta-se à vontade para entrar em contato comigo para discutir como posso contribuir para o sucesso da sua organização.",
+            "TitleWhatIamDoing": "O que estou fazendo?"
+        },
+        "resume": {
+            "title": "Currículo",
+            "titleEducation": "Formação",
+            "educations": [
+                {
+                    "title": "Cruzeiro do Sul Virtual",
+                    "subTitle": "Curso Superior de Tecnologia: Análise e desenvolvimento de sistemas",
+                    "date": "2023 — 2025",
+                    "description": "Este curso proporciona contato direto com conteúdos pertinentes à Tecnologia da Informação, com foco em desenvolvimento de software, gestão de negócios, documentação e sistemas."
+                },
+                {
+                    "title": "Cruzeiro do Sul Virtual",
+                    "subTitle": "Educação técnica: Desenvolvimento de Sistemas",
+                    "date": "2020 — 2021",
+                    "description": "Desenvolvi projetos individuais e em equipe, aplicando conhecimentos em linguagens como Java, Object Pascal (Delphi), PHP, JavaScript e SQL. Aprendi sobre o ciclo de vida do desenvolvimento de software e metodologias ágeis."
+                }
+            ],
+            "titleExperience": "Experiência",
+            "experiences": [
+                {
+                    "title": "Software engineer front-end SR - Brasil.",
+                    "companyAndDate": "Cast Group | 10/2024 - Atualmente",
+                    "description": "Atuei inicialmente na Cast Group por meio da Upda Tecnologia, sendo posteriormente internalizado devido ao bom desempenho e alinhamento com a equipe e os projetos;"
+                },
+                {
+                    "title": "Software engineer front-end - Brasil.",
+                    "companyAndDate": "Upda | 06/2023 - 10/2024",
+                    "description": "Como desenvolvedor Vue, sigo utilizando o Quasar Vue, Pinia e Vue Router, Typescript para criar componentes reutilizáveis e escaláveis."
+                },
+                {
+                    "title": "Software engineer front-end - Brasil.",
+                    "companyAndDate": "Cardano Warriors | 02/2022 - 06/2023",
+                    "description": "Tenho ampla experiência na criação de microfrontends responsivos, com dedicação especial em alcançar alta fidelidade aos designs fornecidos pelo UX Designer da Cardano Warriors. Tive a oportunidade de trabalhar no desenvolvimento da nova plataforma Cardano Warriors, onde implementamos a arquitetura de microfrontends usando Vue 3 com Vitejs, TypeScript e Sass. Durante esse projeto, tomamos a iniciativa de criar uma biblioteca (ui-kit) para reutilização de componentes em todos os microfrontends. Essa abordagem permitiu maior eficiência e consistência no desenvolvimento, garantindo uma experiência unificada para os usuários."
+                },
+                {
+                    "title": "Desenvolvedor front-end Pleno - Ribeirão Preto - SP.",
+                    "companyAndDate": "Convertize | 02/2022 - 11/2022",
+                    "description": "Desenvolvi landing pages e lojas online para os clientes da Convertize, utilizando diversas tecnologias, incluindo HTML5, CSS3, JavaScript, Django, jQuery, Bootstrap e React.js. Responsável por fornecer suporte personalizado ao cliente, solucionar problemas específicos relacionados ao Front-End. Gerenciava o encerramento de chamados para garantir uma resolução eficiente de problemas e satisfação do cliente."
+                },
+                {
+                    "title": "Desenvolvedor front-end Júnior - Ribeirão Preto - SP.",
+                    "companyAndDate": "Convertize | 05/2021 - 02/2022",
+                    "description": "Trabalhei na criação e manutenção das páginas de e-commerce da Convertize, utilizando HTML5, CSS3, Django e Bootstrap. Colaborei com a equipe de Analistas de Suporte, lidando com consultas de clientes por telefone e chat no Helpdesk, fornecendo suporte técnico e resolvendo problemas do cliente para garantir uma experiência eficiente e satisfatória."
+                }
+            ],
+            "titleSkills": "Minhas habilidades",
+            "skills": {
+                "vue": {
+                    "description": "Vue é um framework progressivo para construir interfaces de usuário."
+                },
+                "angular": {
+                    "description": "Angular é uma plataforma para construir aplicações web para desktop e mobile."
+                },
+                "nuxt": {
+                    "description": "Nuxt.js é um framework para criar aplicações Vue renderizadas no lado do servidor."
+                },
+                "javascript": {
+                    "description": "JavaScript é uma linguagem de programação leve, interpretada ou compilada just-in-time, com funções de primeira classe."
+                },
+                "typescript": {
+                    "description": "TypeScript é um superset de JavaScript tipado que compila para JavaScript puro."
+                },
+                "nestjs": {
+                    "description": "Nest é um framework para construir aplicações eficientes e escaláveis no lado do servidor com Node.js."
+                },
+                "spring": {
+                    "description": "Spring é um framework para construir aplicações corporativas em Java."
+                },
+                "docker": {
+                    "description": "Docker é um conjunto de produtos de plataforma como serviço que usam virtualização em nível de sistema operacional para entregar softwares em contêineres."
+                },
+                "aws": {
+                    "description": "Amazon Web Services (AWS) é uma subsidiária da Amazon que fornece plataformas de computação em nuvem e APIs sob demanda para indivíduos, empresas e governos sob o modelo de pagamento conforme o uso."
+                },
+                "git": {
+                    "description": "Git é um sistema de controle de versão distribuído gratuito e de código aberto, projetado para lidar com tudo, desde pequenos até muito grandes projetos, com velocidade e eficiência."
+                },
+                "sass": {
+                    "description": "Sass é uma linguagem de folhas de estilo que é compilada para CSS. Permite usar variáveis, regras aninhadas, mixins, funções e mais, tudo com uma sintaxe totalmente compatível com CSS."
+                },
+                "linux": {
+                    "description": "Linux é uma família de sistemas operacionais de código aberto semelhantes ao Unix, baseada no kernel Linux, lançado pela primeira vez em 17 de setembro de 1991."
+                }
+            }
+        },
+        "contact": {
+            "title": "Contato",
+            "titleContactForm": "Formulário de Contato",
+            "placeholderFullName": "Nome completo",
+            "placeholderEmailAdress": "Endereço de e-mail",
+            "placeholderYourMessage": "Sua mensagem",
+            "buttonSendMessage": "Enviar mensagem"
+        },
+        "portfolio": {
+            "title": "Portfólio",
+            "buttonAll": "Todos"
+        }
     }
-  }
 }

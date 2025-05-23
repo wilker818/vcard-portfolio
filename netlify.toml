@@ -3,7 +3,7 @@
   NODE_VERSION = "22"
 
 [build]
-  publish = "dist"
+  publish = ".output/public"
   command = "npm install --prefer-offline && npm run build"
 
 [[redirects]]

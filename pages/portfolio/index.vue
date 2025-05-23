@@ -1,20 +1,16 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
-import { useI18n } from "vue-i18n";
+import {ref, onMounted} from "vue";
+import {useI18n} from "vue-i18n";
 
 import CardPortfolio from "~/pages/portfolio/components/card-portfolio.vue";
 import ModalPortfolio from "~/pages/portfolio/components/modal-portfolio.vue";
 
-import { Project } from "~/interfaces/projects";
+import type {Project} from "~/interfaces/projects";
 
-const { t, locale } = useI18n({ useScope: "global" });
-const { data: projects } = await useFetch("/api/projects");
-const { data: categories } = await useFetch("/api/categories");
+const {t, locale} = useI18n({useScope: "global"});
+const {data: projectsList} = await useFetch<Project[]>("/api/projects");
+const {data: categories} = await useFetch("/api/categories");
 
-const projectList = ref<Project[]>([]);
-if (projects.value) {
-    projectList.value = projects.value;
-}
 const activeCategory = ref(0);
 
 const activeItem = ref<Project | undefined>(undefined);
@@ -26,7 +22,7 @@ useHead({
 });
 
 onMounted(() => {
-    projects;
+    projectsList;
     categories;
 });
 
@@ -53,23 +49,23 @@ function closeItem() {
 
         <section class="projects">
             <div class="project-list">
-                <tempalte v-for="project in projectList" :key="project.id">
+                <template v-for="project in projectsList" :key="project.id">
                     <card-portfolio
-                        :item="project"
-                        :locale="locale"
-                        :activeCategory="activeCategory"
-                        @showItem="showItem"
+                            :item="project"
+                            :locale="locale"
+                            :activeCategory="activeCategory"
+                            @showItem="showItem"
                     />
-                </tempalte>
+                </template>
             </div>
 
             <modal-portfolio
-                v-if="activeModal"
-                :item="activeItem"
-                :locale="locale"
-                :activeModal="activeModal"
-                :activeOverlay="activeOverlay"
-                @closeModal="closeItem"
+                    v-if="activeModal"
+                    :item="activeItem"
+                    :locale="locale"
+                    :activeModal="activeModal"
+                    :activeOverlay="activeOverlay"
+                    @closeModal="closeItem"
             />
         </section>
     </article>

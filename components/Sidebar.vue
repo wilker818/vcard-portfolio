@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref, type Ref } from "vue";
 
+import LangSwitcher from "~/components/LangSwitcher.vue";
+
 const isOpen: Ref<boolean> = ref(false);
 
 const socialMedia = ref([
@@ -40,7 +42,7 @@ const socialMedia = ref([
                     src="/images/my-avatar.jpeg"
                     alt="Wilker Ferreira"
                     width="80"
-                />
+                >
             </figure>
 
             <div class="info-content">
@@ -92,7 +94,7 @@ const socialMedia = ref([
 
             <div class="separator" />
             <ul class="social-list">
-                <LangSwitcher2 title="translate" />
+                <LangSwitcher title="translate" />
             </ul>
         </div>
     </aside>

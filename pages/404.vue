@@ -3,13 +3,14 @@ const router = useRouter();
 useHead({
     title: "Ooups!",
 });
+const { t } = useI18n({ useScope: "global" });
 </script>
 
 <template>
     <article class="active" data-page="resume">
         <header>
             <h2 class="h2 article-title">
-                {{ $t("notFound.title") }}
+                {{ t("notFound.title") }}
             </h2>
         </header>
 
@@ -17,12 +18,12 @@ useHead({
             <div class="text-[5rem] text-[#f39c12] font-bold">404</div>
 
             <div class="text-xl text-[#fafafa]">
-                <span>{{ $t("notFound.textDescription") }} 😞</span>
+                <span>{{ t("notFound.textDescription") }} 😞</span>
                 <span
                     class="mx-auto w-40 py-2 mt-5 cursor-pointer font-semibold bg-ranko-500 text-[#1e1e1f] rounded text-sm"
                     @click="router.back()"
                 >
-                    {{ $t("notFound.buttonGoBack") }}
+                    {{ t("notFound.buttonGoBack") }}
                 </span>
             </div>
         </div>

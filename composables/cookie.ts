@@ -1,18 +1,15 @@
-import { defineStore } from "pinia";
-import { computed, ref } from "vue";
-import { inject } from "vue";
-import { type CookieRef, useCookie } from "nuxt/app";
-
-interface Cookies {
-    set(key: string, value: boolean, options: unknown): void;
-}
+import {defineStore} from "pinia";
+import {computed, ref} from "vue";
+import {useCookie} from "nuxt/app";
 
 export const useCookieStore = defineStore("cookieStore", () => {
-    const cookie: CookieRef<boolean> = ref(useCookie("accept-cookie"));
-    const cookies = inject<Cookies>("$cookies");
+
+    const cookie = useCookie<boolean>("accept-cookie", {
+        maxAge: 60 * 60 * 24 * 30,
+    });
 
     function setCookie() {
-        cookies?.set("accept-cookie", true, { expires: "30d" });
+
         return (cookie.value = true);
     }
 

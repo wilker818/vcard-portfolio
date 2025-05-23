@@ -1,8 +1,13 @@
 <script setup lang="ts">
-import { computed } from "vue";
-import { useI18n } from "vue-i18n";
+import {computed} from "vue";
+import {useI18n} from "vue-i18n";
 
-const { locale } = useI18n({ useScope: "global" });
+import Sidebar from "~/components/Sidebar.vue";
+import Navbar from "~/components/Navbar.vue";
+import CookieBar from "~/components/CookieBar.vue";
+
+
+const {locale} = useI18n({useScope: "global"});
 
 const lang = computed(() => locale.value);
 
@@ -16,8 +21,8 @@ useHead({
             : "Wilker Ferreira - Developer";
     },
     meta: [
-        { charset: "utf-8" },
-        { name: "viewport", content: "width=devide-width, initial-scale=1" },
+        {charset: "utf-8"},
+        {name: "viewport", content: "width=devide-width, initial-scale=1"},
         {
             hid: "keywords",
             name: "keywords",
@@ -35,7 +40,7 @@ useHead({
             content:
                 "Descubra meu portfólio de desenvolvimento de sistemas, onde crio soluções funcionais e impactantes. Com experiência em diversas áreas, como desenvolvimento web e aplicações empresariais, ofereço soluções criativas para impulsionar seus projetos. Explore meu trabalho e dê vida às suas ideias com tecnologia.",
         },
-        { hid: "og:image", property: "og:image", content: "/favicon.png" },
+        {hid: "og:image", property: "og:image", content: "/favicon.png"},
     ],
     link: [
         {
@@ -74,11 +79,11 @@ useHead({
     <main
         class="relative flex xl:items-start items-center xl:flex-row flex-col"
     >
-        <Sidebar />
+        <Sidebar/>
         <div class="main-content">
-            <Navbar />
-            <slot />
+            <Navbar/>
+            <slot/>
         </div>
-        <CookieBar />
+        <CookieBar/>
     </main>
 </template>

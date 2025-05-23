@@ -1,23 +1,27 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import {useI18n} from "vue-i18n";
+
+const {t} = useI18n({useScope: "global"});
+</script>
 
 <template>
     <nav class="navbar">
         <ul class="navbar-list">
             <li class="navbar-item">
                 <NuxtLink to="/" class="navbar-link">
-                    {{ $t("pageTitles.about") }}
+                    {{ t("pageTitles.about") }}
                 </NuxtLink>
             </li>
 
             <li class="navbar-item">
                 <NuxtLink to="/resume" class="navbar-link">
-                    {{ $t("pageTitles.resume") }}
+                    {{ t("pageTitles.resume") }}
                 </NuxtLink>
             </li>
 
             <li class="navbar-item">
                 <NuxtLink to="/portfolio" class="navbar-link">
-                    {{ $t("pageTitles.portfolio") }}
+                    {{ t("pageTitles.portfolio") }}
                 </NuxtLink>
             </li>
 
@@ -27,7 +31,7 @@
                     target="_blank"
                     class="navbar-link"
                 >
-                    {{ $t("pageTitles.contact") }}
+                    {{ t("pageTitles.contact") }}
                 </a>
             </li>
         </ul>

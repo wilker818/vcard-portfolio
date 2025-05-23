@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { type Ref, onBeforeMount, onMounted, ref } from "vue";
-import { useI18n } from "vue-i18n";
+import {type Ref, onBeforeMount, onMounted, ref} from "vue";
+import {useI18n} from "vue-i18n";
 
-import { useLocaleStore } from "./composables/locale";
+import {useLocaleStore} from "./composables/locale";
 
-const { locale } = useI18n({ useScope: "global" });
+const {locale} = useI18n({useScope: "global"});
 const cookieLocale = useLocaleStore();
 
 locale.value = cookieLocale.getLocale || "pt";
@@ -23,9 +23,9 @@ onMounted(() => {
 </script>
 
 <template>
-    <LoadingPage v-show="!loadingPage" />
+    <LoadingPage v-show="!loadingPage"/>
     <NuxtLayout>
-        <NuxtPage transition />
+        <NuxtPage transition/>
     </NuxtLayout>
 </template>
 

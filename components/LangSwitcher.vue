@@ -1,55 +1,32 @@
 <script setup lang="ts">
-import { onMounted } from "vue";
-import Dropdown from "primevue/dropdown";
+import {onMounted} from "vue";
+import {useI18n} from "vue-i18n";
 
-import { useLocaleStore } from "~/composables/locale";
+import {useLocaleStore} from "~/composables/locale";
+
+const {locale} = useI18n({useScope: "global"});
 
 const cookieLocale = useLocaleStore();
 
 onMounted(() => {
-    const elements = document.getElementsByClassName("p-dropdown-trigger");
-    while (elements.length > 0) {
-        const parent = elements[0]?.parentNode;
-        if (parent) {
-            parent.removeChild(elements[0]);
-        }
-    }
     useLocaleStore();
 });
 
-function changeLocation(ev: any) {
-    cookieLocale.setLocale(ev.value);
-    localStorage.setItem("locale", ev.value);
+function changeLang() {
+    if (locale.value === "pt") {
+        cookieLocale.setLocale("en");
+        locale.value = "en";
+    } else {
+        cookieLocale.setLocale("pt");
+        locale.value = "pt";
+    }
 }
 </script>
 
 <template>
-    <Dropdown
-        v-model="$i18n.locale"
-        class="bg-gray-400 text-gray-800 dark:bg-gray-800 dark:text-gray-400"
-        input-class="border-0"
-        :options="$i18n.availableLocales"
-        @change="changeLocation"
-    >
-        <template #value="slotProps">
-            <div>
-                <img
-                    :alt="slotProps.value"
-                    :src="`/flags/${slotProps.value}.png`"
-                    class="h-6"
-                />
-            </div>
-        </template>
-        <template #option="slotProps">
-            <div>
-                <img
-                    :alt="slotProps.option"
-                    :src="`/flags/${slotProps.option}.png`"
-                    class="h-6"
-                />
-            </div>
-        </template>
-    </Dropdown>
+    <div class="cursor-pointer transition-all fade" @click="changeLang()">
+        <img :src="`/flags/${locale}.png`" :alt="locale" class="h-6">
+    </div>
 </template>
 
 <style scoped>

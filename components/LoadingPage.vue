@@ -5,7 +5,7 @@
                 src="/loading/three-dots-white.svg"
                 class="w-40"
                 alt="loading..."
-            />
+            >
         </h2>
     </div>
 </template>

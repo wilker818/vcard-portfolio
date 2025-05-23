@@ -2,13 +2,26 @@ import { createI18n } from "vue-i18n";
 import { useLocaleStore } from "~/composables/locale";
 import { defineNuxtPlugin } from "nuxt/app";
 
+import pt from "~/locales/pt.json";
+import en from "~/locales/en.json";
+
 export default defineNuxtPlugin(() => {
-    createI18n({
+    const localeStore = useLocaleStore();
+
+    const i18n = createI18n({
         legacy: false,
-        inheritLocale: false,
         globalInjection: true,
-        localeDir: "locales",
-        fallbackLocale: useLocaleStore().getLocale || "pt",
-        locale: useLocaleStore().getLocale || "pt",
+        locale: localeStore.getLocale || "pt",
+        fallbackLocale: "pt",
+        messages: {
+            pt,
+            en,
+        },
     });
+
+    return {
+        provide: {
+            i18n,
+        },
+    };
 });

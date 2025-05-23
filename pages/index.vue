@@ -2,7 +2,7 @@
 import { onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 
-import { useLocaleStore } from "../composables/locale";
+import { useLocaleStore } from "~/composables/locale";
 
 const { t } = useI18n({ useScope: "global" });
 

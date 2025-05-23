@@ -19,5 +19,6 @@ export interface Project {
     category: Category;
     content: Content;
     image: string;
+    alt: string;
     linkToProject: string;
 }

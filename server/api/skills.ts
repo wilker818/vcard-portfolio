@@ -1,7 +1,7 @@
-import { ref } from "vue";
+import { defineEventHandler } from "h3";
 
-export function configResume() {
-    const skills = ref([
+export default defineEventHandler(() => {
+    return [
         {
             title: "Vue",
             descriptionKey: "pages.resume.skills.vue.description",
@@ -62,6 +62,5 @@ export function configResume() {
             descriptionKey: "pages.resume.skills.linux.description",
             icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
         },
-    ]);
-    return { skills };
-}
+    ];
+});

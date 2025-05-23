@@ -3,8 +3,10 @@ import { onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 
 import { useLocaleStore } from "~/composables/locale";
+import { Skill } from "~/interfaces/projects";
 
 const { t } = useI18n({ useScope: "global" });
+const { data: skillsList } = await useFetch<Skill[]>("/api/skills");
 
 useHead({});
 
@@ -25,25 +27,28 @@ onMounted(() => {
             <p>
                 {{ t("pages.index.textAbout") }}
             </p>
+        </section>
 
-            <p>
-                {{ t("pages.index.textAbout2") }}
-            </p>
-            <p>
-                {{ t("pages.index.textAbout3") }}
-            </p>
-            <p>
-                {{ t("pages.index.textAbout4") }}
-            </p>
-            <p>
-                {{ t("pages.index.textAbout5") }}
-            </p>
-            <p>
-                {{ t("pages.index.textAbout6") }}
-            </p>
-            <p>
-                {{ t("pages.index.textAbout7") }}
-            </p>
+        <section class="skill">
+            <h3 class="h3 skills-title">
+                {{ t("pages.resume.titleSkills") }}
+            </h3>
+
+            <div class="skills-list content-card">
+                <div
+                    v-for="(skill, i) in skillsList"
+                    :key="i"
+                    class="skills-item"
+                    :title="t(skill.descriptionKey)"
+                >
+                    <img
+                        :src="skill.icon"
+                        :alt="skill.title"
+                        width="100"
+                        height="100"
+                    />
+                </div>
+            </div>
         </section>
     </article>
 </template>

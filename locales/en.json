@@ -16,13 +16,7 @@
     "pages": {
         "index": {
             "title": "About",
-            "textAbout": "I am a front-end developer with experience in maintaining and creating high-fidelity pages, always using the most robust frameworks in the market for testing and development. Additionally, I have experience in customer support.",
-            "textAbout2": "I started my career as a Junior Front-End Developer at Convertize, where I used HTML5, CSS3, Django, and Bootstrap to develop and maintain e-commerce pages. I also worked closely with the Support Analyst team, providing phone support and Helpdesk assistance via chat.",
-            "textAbout3": "As I progressed in my career, I took on the role of Mid-level Front-End Developer at Convertize. In this role, I was responsible for creating custom landing pages and stores for clients, using HTML5, CSS3, JavaScript, Django, jQuery, Bootstrap, and React.js. I also led the support and resolution of specific Front-End-related issues.",
-            "textAbout4": "Most recently, I joined the development team at Cardano Warriors as a Software Engineer (front-end). In the project, I focused on creating highly responsive micro-frontends, following the guidelines set by the UX Designer at Cardano Warriors, using ViteJS, Vue 3, TypeScript, Sass, and VueI18N. Additionally, I actively participated in the creation of our UI library (ui-kit) to consolidate all components and business rules.",
-            "textAbout5": "I am constantly seeking to improve my technical skills and stay up-to-date with the latest trends in front-end development. I am passionate about creating attractive interfaces, providing efficient solutions, and contributing to the success of the projects I am involved in.",
-            "textAbout6": "I am open to challenging new opportunities where I can apply my experience and knowledge to drive team and company growth.",
-            "textAbout7": "Please feel free to contact me to discuss how I can contribute to the success of your organization.",
+            "textAbout": "software developer with 5 years of experience, specialized in Vue.js and familiar with Angular, with a solid foundation in modern web technologies. I’ve worked on large-scale projects, delivering intuitive, responsive, and high-performance interfaces, always aligned with best practices in usability and accessibility. I have experience working in agile environments, collaborating with cross-functional teams where quick adaptation and continuous delivery are essential. I’m proactive, flexible in the face of changing requirements, and quick to learn new technologies when needed.",
             "TitleWhatIamDoing": "What I'm Doing?"
         },
         "resume": {
@@ -45,27 +39,27 @@
             "titleExperience": "Experience",
             "experiences": [
                 {
-                    "title": "Senior Front-End Software Engineer - Brazil.",
+                    "title": "Senior Front-End Software Engineer - Brazil - Remote",
                     "companyAndDate": "Cast Group | 10/2024 - Present",
                     "description": "I initially joined Cast Group via Upda Tecnologia and was later internalized due to my strong performance and alignment with the team and projects."
                 },
                 {
-                    "title": "Front-End Software Engineer - Brazil.",
+                    "title": "Front-End Software Engineer - Brazil - Remote",
                     "companyAndDate": "Upda | 06/2023 - 10/2024",
                     "description": "As a Vue developer, I continued to use Quasar Vue, Pinia, Vue Router, and TypeScript to create reusable and scalable components."
                 },
                 {
-                    "title": "Front-End Software Engineer - Brazil.",
+                    "title": "Front-End Software Engineer - Brazil - Remote",
                     "companyAndDate": "Cardano Warriors | 02/2022 - 06/2023",
                     "description": "I have extensive experience creating responsive microfrontends, with a strong focus on achieving high fidelity to the designs provided by the Cardano Warriors UX Designer. I had the opportunity to work on the development of the new Cardano Warriors platform, where we implemented a microfrontend architecture using Vue 3 with Vitejs, TypeScript, and Sass. During this project, we took the initiative to create a UI library (ui-kit) for component reuse across all microfrontends. This approach enabled greater efficiency and consistency in development, ensuring a unified experience for users."
                 },
                 {
-                    "title": "Mid-level Front-End Developer - Ribeirão Preto - SP, Brazil.",
+                    "title": "Mid-level Front-End Developer - Ribeirão Preto - SP, Brazil - Remote",
                     "companyAndDate": "Convertize | 02/2022 - 11/2022",
                     "description": "Developed landing pages and online stores for Convertize's clients, using various technologies including HTML5, CSS3, JavaScript, Django, jQuery, Bootstrap, and React.js. Responsible for providing personalized customer support, solving specific Front-End issues. Managed ticket closure to ensure efficient issue resolution and customer satisfaction."
                 },
                 {
-                    "title": "Junior Front-End Developer - Ribeirão Preto - SP, Brazil.",
+                    "title": "Junior Front-End Developer - Ribeirão Preto - SP, Brazil - Remote",
                     "companyAndDate": "Convertize | 05/2021 - 02/2022",
                     "description": "I worked on the creation and maintenance of Convertize's e-commerce pages using HTML5, CSS3, Django, and Bootstrap. Collaborated with the Support Analyst team, handling customer queries via phone and Helpdesk chat, providing technical support, and resolving customer issues to ensure an efficient and satisfactory experience."
                 }

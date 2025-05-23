@@ -22,3 +22,10 @@ export interface Project {
     alt: string;
     linkToProject: string;
 }
+
+export interface Skill {
+    id: number;
+    title: string;
+    descriptionKey: string;
+    icon: string;
+}

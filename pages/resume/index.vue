@@ -2,10 +2,7 @@
 import { computed } from "vue";
 import { useI18n } from "vue-i18n";
 
-import { configResume } from "~/pages/resume/components/config-resume";
-
 const { t, tm } = useI18n({ useScope: "global" });
-const { skills } = configResume();
 
 const experiences = computed(() => tm("pages.resume.experiences") as any[]);
 const educations = computed(() => tm("pages.resume.educations") as any[]);
@@ -81,28 +78,6 @@ useHead({
                     </p>
                 </li>
             </ol>
-        </section>
-
-        <section class="skill">
-            <h3 class="h3 skills-title">
-                {{ t("pages.resume.titleSkills") }}
-            </h3>
-
-            <div class="skills-list content-card">
-                <div
-                    v-for="(skill, i) in skills"
-                    :key="i"
-                    class="skills-item"
-                    :title="t(skill.descriptionKey)"
-                >
-                    <img
-                        :src="skill.icon"
-                        :alt="skill.title"
-                        width="100"
-                        height="100"
-                    />
-                </div>
-            </div>
         </section>
     </article>
 </template>

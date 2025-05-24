@@ -1,18 +1,12 @@
 <script setup lang="ts">
-import { onMounted } from "vue";
-import { useI18n } from "vue-i18n";
+import {useI18n} from "vue-i18n";
 
-import { useLocaleStore } from "~/composables/locale";
-import type { Skill } from "~/interfaces/skills";
+import type {Skill} from "~/interfaces/skills";
 
-const { t } = useI18n({ useScope: "global" });
-const { data: skillsList } = await useFetch<Skill[]>("/api/skills");
+const {t} = useI18n({useScope: "global"});
+const {data: skillsList} = await useFetch<Skill[]>("/api/skills");
 
 useHead({});
-
-onMounted(() => {
-    useLocaleStore();
-});
 </script>
 
 <template>

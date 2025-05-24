@@ -1,19 +1,25 @@
 <script setup lang="ts">
-import {useI18n} from 'vue-i18n'
 import {computed} from 'vue'
+import {useI18n} from 'vue-i18n'
 import {useHead} from '#imports'
 
-const {t, locale, getLocaleMessage} = useI18n({useScope: 'global'})
+import type {EduacationLocale, Eduacation} from "~/interfaces/educations";
+import type {ExperienceLocale, Experience} from "~/interfaces/experiences";
 
+const {t, locale} = useI18n({useScope: 'global'})
+const {data: educations} = await useFetch<EduacationLocale>("/api/educations");
+const {data: experiences} = await useFetch<ExperienceLocale>("/api/experiences");
 
-const educations = computed(() => {
-    const msgs = getLocaleMessage(locale.value)
-    return msgs?.pages?.resume?.educations || []
+const educationsList = computed(() => {
+    if (!educations.value) return [] as Eduacation[]
+
+    return educations.value[locale.value] as Eduacation []
 })
 
-const experiences = computed(() => {
-    const msgs = getLocaleMessage(locale.value)
-    return msgs?.pages?.resume?.experiences || []
+const experiencesList = computed(() => {
+    if (!experiences.value) return [] as Experience[]
+
+    return experiences.value[locale.value] as Experience[]
 })
 
 useHead({
@@ -36,12 +42,13 @@ useHead({
             </div>
 
             <ol class="timeline-list">
-                <li v-for="(edu, i) in educations" :key="i" class="timeline-item">
-                    <h4 class="h4 timeline-item-title">{{ edu.title?.body.static }}</h4>
-                    <span>{{ edu.date.static?.body.static }}</span>
+                <li v-for="(edu ) in educationsList" :key="edu.id" class="timeline-item">
+                    <h4 class="h4 timeline-item-title">{{ edu.title }}</h4>
+                    <span>{{ edu.date }}</span>
                     <p class="timeline-text">
-                        {{ edu.subTitle?.body.static }}<br/>
-                        {{ edu.description?.body.static }}
+                        {{ edu.subTitle }}
+                        <br/>
+                        {{ edu.description }}
                     </p>
                 </li>
             </ol>
@@ -56,10 +63,10 @@ useHead({
             </div>
 
             <ol class="timeline-list">
-                <li v-for="(exp, i) in experiences" :key="i" class="timeline-item">
-                    <h4 class="h4 timeline-item-title">{{ exp.title?.body.static }}</h4>
-                    <span>{{ exp.companyAndDate?.body.static }}</span>
-                    <p class="timeline-text">{{ exp.description?.body.static }}</p>
+                <li v-for="(exp) in experiencesList" :key="exp.id" class="timeline-item">
+                    <h4 class="h4 timeline-item-title">{{ exp.title }}</h4>
+                    <span>{{ exp.companyAndDate }}</span>
+                    <p class="timeline-text">{{ exp.description }}</p>
                 </li>
             </ol>
         </section>

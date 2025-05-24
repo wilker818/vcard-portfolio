@@ -1,25 +1,16 @@
 <script setup lang="ts">
-import {onMounted} from "vue";
 import {useI18n} from "vue-i18n";
 
-import {useLocaleStore} from "~/composables/locale";
+const {locale, setLocale} = useI18n({useScope: "global"});
 
-const {locale} = useI18n({useScope: "global"});
-
-const cookieLocale = useLocaleStore();
-
-onMounted(() => {
-    useLocaleStore();
-});
 
 function changeLang() {
-    if (locale.value === "pt") {
-        cookieLocale.setLocale("en");
-        locale.value = "en";
-    } else {
-        cookieLocale.setLocale("pt");
-        locale.value = "pt";
+    if (locale.value !== "pt") {
+        setLocale("pt");
+        return
     }
+
+    setLocale("en");
 }
 </script>
 

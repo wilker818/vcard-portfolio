@@ -1,13 +1,5 @@
 <script setup lang="ts">
 import {type Ref, onBeforeMount, onMounted, ref} from "vue";
-import {useI18n} from "vue-i18n";
-
-import {useLocaleStore} from "./composables/locale";
-
-const {locale} = useI18n({useScope: "global"});
-const cookieLocale = useLocaleStore();
-
-locale.value = cookieLocale.getLocale || "pt";
 
 const loadingPage: Ref<boolean | undefined> = ref();
 

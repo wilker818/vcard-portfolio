@@ -49,6 +49,7 @@ export default defineNuxtConfig({
             {code: "en", file: "en.json"}
         ],
         defaultLocale: 'pt',
+        strategy: 'no_prefix'
     },
     plugins: [{src: "~/plugins/vercel.ts", mode: "client"}],
 });
